@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  contactMethods=[
+    {id:1,name:'email'},
+    {id:2,name:'phone'}
+  ];
+
+  showModel(model){
+    console.log(model);
+  }
+
+  submit(f){
+    console.log(f);
+  }
+
+  showModelGroup(contact){
+    console.log(contact);
+  }
 }
